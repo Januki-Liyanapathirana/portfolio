@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== YOUR DESIGN ===== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+
+  /* Dark gradient background */
+  background: radial-gradient(circle at 20% 20%, #0f172a, #020617);
+  color: #e2e8f0;
+}
+
+/* Glow blobs */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+body::before {
+  background: #3b82f6;
+  top: -100px;
+  left: -100px;
+}
+
+body::after {
+  background: #8b5cf6;
+  bottom: -100px;
+  right: -100px;
+}
+
+/* Glass cards */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+/* Buttons */
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
