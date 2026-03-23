@@ -21,7 +21,7 @@ const Hero = () => {
 
           <div className="flex gap-4">
             <a
-              href="/cv.pdf"
+              href="/januki-liyanapathirana-cv.pdf"
               download
               className="bg-blue-500 text-white px-6 py-2 rounded-lg shadow"
             >
