@@ -6,6 +6,7 @@ const Hero = () => {
         {/* LEFT */}
         <div>
           <h2 className="text-4xl font-bold mb-2">Hello, I'm</h2>
+
           <h1 className="text-5xl font-bold text-blue-400 mb-4">
             Januki Liyanapathirana
           </h1>
@@ -19,16 +20,21 @@ const Hero = () => {
           </p>
 
           <div className="flex gap-4">
-            <button className="bg-blue-500 text-white px-6 py-2 rounded-lg shadow">
+            <a
+              href="/cv.pdf"
+              download
+              className="bg-blue-500 text-white px-6 py-2 rounded-lg shadow"
+            >
               Download CV
-            </button>
+            </a>
+
             <a href="#projects">
               <button className="btn-primary">
                 View Projects
               </button>
             </a>
           </div>
-        </div>
+        </div> {/* ✅ THIS WAS MISSING */}
 
         {/* RIGHT */}
         <div className="flex justify-center">
