@@ -11,19 +11,26 @@ const Hero = () => {
             Januki Liyanapathirana
           </h1>
 
-          <p className="font-semibold mb-4">
-            Computer Science Undergraduate / Full-Stack Development /Project Management
-          </p>
+          
+          <div className="mb-4">
+            <p className="font-bold text-lg">
+              Computer Science Undergraduate
+            </p>
+            <p className="text-gray-500 font-medium">
+              Full-Stack Development | Project Management | Business Analysis
+            </p>
+          </div>
 
           <p className="text-gray-600 mb-6">
-            I build modern web applications with clean UI and scalable backend systems.
+            Background in full-stack development with clean UI and scalable backend systems, 
+            along with working knowledge of project management and business analysis concepts.
           </p>
 
           <div className="flex gap-4">
             <a
               href="/Januki_liyanapathirana_Resume_2026_fs.pdf"
               download
-              className="bg-blue-500 text-white px-6 py-2 rounded-lg shadow"
+              className="bg-blue-500 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-600 transition"
             >
               Download CV
             </a>
@@ -34,12 +41,13 @@ const Hero = () => {
               </button>
             </a>
           </div>
-        </div> 
+        </div>
 
         {/* RIGHT */}
         <div className="flex justify-center">
           <img
             src="/profile.jpg"
+            alt="Januki Liyanapathirana"
             className="w-64 h-64 rounded-full object-cover shadow-lg"
           />
         </div>
