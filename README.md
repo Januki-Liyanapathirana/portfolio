@@ -2,7 +2,7 @@
 
 This is my personal portfolio website built using React, showcasing my projects, skills, and experience as a Computer Science undergraduate.
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - React  
 - JavaScript (ES6+)  
