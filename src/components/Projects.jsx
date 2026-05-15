@@ -2,17 +2,24 @@ const projects = [
   {
     title: "CookMate – AI Cooking Companion",
     desc: "AI-powered cooking assistant with smart recipe generation and real-time temperature monitoring integration.",
-    tech: ["React Native", "Node.js", "Express", "Firebase"],
+    tech: ["React Native", "Node.js", "Express.js", "MongoDB", "Firebase"],
     img: "/cookmate.jpg",
     github: "https://github.com/yehenidodanwela/CookMate.git",
   },
   {
     title: "Artiverse – Artist Platform",
     desc: "Platform for Sri Lankan artists with immersive features using AR and interactive UI experiences.",
-    tech: ["React", "Node.js", "MongoDB", "Three.js"],
+    tech: ["React", "Node.js", "MongoDB", "Express.js", "Firebase"],
     img: "/artiverse.jpg",
     github: "#",
     figma: "https://www.figma.com/design/WiZ7cQ6sGk5OpPizeN4OAw/ArtiverseLK?node-id=670-7164&t=K9wymFxyjLeEvaTJ-1", 
+  },
+  {
+  title: "Smart Campus REST API",
+  desc: "Backend REST API built with JAX-RS for smart campus management, featuring versioned endpoints, nested resources, filtering, validation, and custom exception handling.",
+  tech: ["Java", "JAX-RS", "Jersey", "Maven", "Tomcat"],
+  img: "/smart-campus-api.jpg",
+  github: "https://github.com/Januki-Liyanapathirana/smart-campus-api.git",
   },
   {
     title: "Health Awareness Website",
