@@ -15,14 +15,6 @@ const projects = [
     figma: "https://www.figma.com/design/WiZ7cQ6sGk5OpPizeN4OAw/ArtiverseLK?node-id=670-7164&t=K9wymFxyjLeEvaTJ-1", 
   },
   {
-    title: "DebTrapp – Finance Tracker",
-    desc: "Cross-platform app for tracking income and expenses with clean UI and structured data management.",
-    tech: ["React Native", "Node.js", "Express"],
-    img: "/debtrapp.jpg",
-    github: "https://github.com/cybercrewzzz/project-debtrapp.git",
-    figma: "https://www.figma.com/design/ZsWwVRtfIepLeA2nM6TJq0/Main-UI?node-id=0-1&t=oQ5L0tfY0j2SFIuQ-1", 
-  },
-  {
     title: "Health Awareness Website",
     desc: "Interactive website promoting healthy lifestyle awareness with responsive UI and engaging content.",
     tech: ["HTML", "CSS", "JavaScript"],
