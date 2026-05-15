@@ -1,72 +1,192 @@
+import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
+
 const Contact = () => {
   return (
-    <section id="contact" className="glass">
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+    <section id="contact" className="glass py-16">
+
+      <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
 
         {/* LEFT SIDE */}
         <div>
-          <h2 className="text-2xl font-bold mb-4">Get In Touch</h2>
 
-          <p className="text-gray-400 mb-6">
-            Feel free to reach out through my social platforms.
+          <h2 className="text-3xl font-bold mb-4">
+            Get In Touch
+          </h2>
+
+          <p className="text-gray-400 mb-8 leading-relaxed max-w-md">
+            Feel free to connect with me through my social platforms or send
+            me a message directly.
           </p>
 
-          <div className="space-y-4">
+          {/* Social Icons */}
+          <div className="flex gap-5">
 
             {/* GitHub */}
             <a
               href="https://github.com/Januki-Liyanapathirana"
               target="_blank"
-              className="block bg-white/5 border border-white/10 p-4 rounded-xl hover:bg-white/10 transition"
+              rel="noreferrer"
+              className="
+                w-16 h-16
+                rounded-full
+                bg-white/5
+                border border-white/10
+                flex items-center justify-center
+                text-2xl text-white
+                transition-all duration-300
+                hover:bg-white/10
+                hover:scale-105
+                hover:border-cyan-400/20
+              "
             >
-              GitHub
+              <FaGithub />
             </a>
 
             {/* LinkedIn */}
             <a
-              href="https://www.linkedin.com/in/januki-liyanapathirana-a74780337"
+              href="https://www.linkedin.com/in/januki-liyanapathirana"
               target="_blank"
-              className="block bg-white/5 border border-white/10 p-4 rounded-xl hover:bg-white/10 transition"
+              rel="noreferrer"
+              className="
+                w-16 h-16
+                rounded-full
+                bg-white/5
+                border border-white/10
+                flex items-center justify-center
+                text-2xl text-white
+                transition-all duration-300
+                hover:bg-white/10
+                hover:scale-105
+                hover:border-cyan-400/20
+              "
             >
-              LinkedIn
+              <FaLinkedinIn />
             </a>
 
             {/* Email */}
             <a
               href="mailto:jkuliyanapathirana23@gmail.com"
-              className="block bg-white/5 border border-white/10 p-4 rounded-xl hover:bg-white/10 transition"
+              className="
+                w-16 h-16
+                rounded-full
+                bg-white/5
+                border border-white/10
+                flex items-center justify-center
+                text-2xl text-white
+                transition-all duration-300
+                hover:bg-white/10
+                hover:scale-105
+                hover:border-cyan-400/20
+              "
             >
-              Email
+              <FaEnvelope />
             </a>
 
           </div>
+
         </div>
 
         {/* RIGHT SIDE FORM */}
-        <div className="bg-white/5 border border-white/10 backdrop-blur-lg p-6 rounded-xl">
+        <form
+          action="https://formsubmit.co/jkuliyanapathirana23@gmail.com"
+          method="POST"
+          className="
+            bg-white/5
+            border border-white/10
+            backdrop-blur-lg
+            p-6
+            rounded-3xl
+          "
+        >
 
+          {/* Disable captcha */}
+          <input type="hidden" name="_captcha" value="false" />
+
+          {/* Optional subject */}
           <input
-            className="w-full mb-3 p-3 rounded-lg bg-transparent border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500"
-            placeholder="Name"
+            type="hidden"
+            name="_subject"
+            value="New Portfolio Message"
           />
 
+          {/* Name */}
           <input
-            className="w-full mb-3 p-3 rounded-lg bg-transparent border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500"
-            placeholder="Email"
+            type="text"
+            name="name"
+            required
+            className="
+              w-full mb-4 p-4
+              rounded-2xl
+              bg-transparent
+              border border-white/10
+              text-white
+              placeholder-gray-400
+              focus:outline-none
+              focus:border-cyan-400/30
+            "
+            placeholder="Your Name"
           />
 
+          {/* Email */}
+          <input
+            type="email"
+            name="email"
+            required
+            className="
+              w-full mb-4 p-4
+              rounded-2xl
+              bg-transparent
+              border border-white/10
+              text-white
+              placeholder-gray-400
+              focus:outline-none
+              focus:border-cyan-400/30
+            "
+            placeholder="Your Email"
+          />
+
+          {/* Message */}
           <textarea
-            className="w-full mb-3 p-3 rounded-lg bg-transparent border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500"
-            placeholder="Message"
+            name="message"
+            rows="5"
+            required
+            className="
+              w-full mb-5 p-4
+              rounded-2xl
+              bg-transparent
+              border border-white/10
+              text-white
+              placeholder-gray-400
+              focus:outline-none
+              focus:border-cyan-400/30
+              resize-none
+            "
+            placeholder="Your Message"
           />
 
-          <button className="w-full py-3 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 hover:opacity-90 transition">
+          {/* Button */}
+          <button
+            type="submit"
+            className="
+              w-full py-4
+              rounded-full
+              bg-gradient-to-r
+              from-cyan-500
+              to-blue-500
+              text-white
+              font-medium
+              transition-all duration-300
+              hover:scale-[1.02]
+              hover:shadow-[0_0_25px_rgba(34,211,238,0.35)]
+            "
+          >
             Send Message
           </button>
 
-        </div>
+        </form>
 
       </div>
+
     </section>
   );
 };
