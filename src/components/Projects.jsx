@@ -1,6 +1,6 @@
 const projects = [
   {
-    title: "CookMate – AI Cooking Companion",
+    title: "CookMate – Cooking Companion App",
     desc: "AI-powered cooking assistant with smart recipe generation and real-time temperature monitoring integration.",
     tech: ["React Native", "Node.js", "Express.js", "MongoDB", "Firebase"],
     img: "/cookmate.jpg",
